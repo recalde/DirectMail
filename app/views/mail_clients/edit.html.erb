@@ -1,0 +1,16 @@
+<h1>Editing Mail Client</h1>
+
+<% form_for(@mail_client) do |f| %>
+  <%= f.error_messages %>
+
+<table>
+  <tr><td><%= f.label :first_name %></td><td><%= f.text_field :first_name %></td></tr>
+  <tr><td><%= f.label :last_name %></td><td><%= f.text_field :last_name %></td></tr>
+  <tr><td><%= f.label :district_number %></td><td><%= f.text_field :district_number %></td></tr>
+  <tr><td></td><td><%= f.submit 'Update' %></td></tr>
+</table>
+
+<% end %>
+
+<%= link_to 'Show', @mail_client %> |
+<%= link_to 'Back', mail_clients_path %>

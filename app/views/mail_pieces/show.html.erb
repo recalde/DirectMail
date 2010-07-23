@@ -1,0 +1,21 @@
+<h1>Mail Piece</h1>
+
+<table>
+  <tr><td>Piece name</td><td><%=h @mail_piece.piece_name %></td></tr>
+  <tr><td>Piece code</td><td><%=h @mail_piece.piece_code %></td></tr>
+  <tr><td>Mail universe description</td><td><%=h @mail_piece.mail_universe_description %></td></tr>
+  <tr><td>Household quantity estimate</td><td><%=h @mail_piece.household_quantity_estimate %></td></tr>
+  <tr><td>Voter count</td><td><%=h @mail_piece.voter_count %></td></tr>
+  <tr><td>List name</td><td><%=h @mail_piece.list_name %></td></tr>
+  <tr><td>Date to printer</td><td><%=h @mail_piece.date_to_printer %></td></tr>
+  <tr><td>Usps drop date</td><td><%=h @mail_piece.usps_drop_date %></td></tr>
+  <tr><td>Expected drop date</td><td><%=h @mail_piece.expected_drop_date %></td></tr>
+  <tr><td>Target hit date</td><td><%=h @mail_piece.target_hit_date %></td></tr>
+  <tr><td>Actual hit date</td><td><%=h @mail_piece.actual_hit_date %></td></tr>
+  <tr><td>Payment description</td><td><%=h @mail_piece.payment_description %></td></tr>
+  <tr><td>Final status</td><td><%=h @mail_piece.final_status %></td></tr>
+  <tr><td>Have invoice</td><td><%=h @mail_piece.have_invoice %></td></tr>
+</table>
+
+<%= link_to 'Edit', edit_mail_piece_path(@mail_piece) %> |
+<%= link_to 'Back to client', mail_client_mail_pieces_path(@mail_piece.mail_client) %>

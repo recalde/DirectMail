@@ -1,0 +1,42 @@
+<h1>Mail Pieces - <%=h @mail_client.first_name %> <%=h @mail_client.last_name %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>Mail universe description</th>
+    <th>Household quantity estimate</th>
+    <th>Voter count</th>
+    <th>List name</th>
+    <th>Date to printer</th>
+    <th>Usps drop date</th>
+    <th>Expected drop date</th>
+    <th>Target hit date</th>
+    <th>Actual hit date</th>
+    <th>Payment description</th>
+    <th>Final status</th>
+    <th>Have invoice</th>
+  </tr>
+
+<% @mail_pieces.each do |mail_piece| %>
+  <tr>
+    <td><%=h mail_piece.piece_name %></td>
+    <td><%=h mail_piece.piece_code %></td>
+    <td><%=h mail_piece.mail_universe_description %></td>
+    <td><%=h mail_piece.household_quantity_estimate %></td>
+    <td><%=h mail_piece.voter_count %></td>
+    <td><%=h mail_piece.list_name %></td>
+    <td><%=h mail_piece.date_to_printer %></td>
+    <td><%=h mail_piece.usps_drop_date %></td>
+    <td><%=h mail_piece.expected_drop_date %></td>
+    <td><%=h mail_piece.target_hit_date %></td>
+    <td><%=h mail_piece.actual_hit_date %></td>
+    <td><%=h mail_piece.payment_description %></td>
+    <td><%=h mail_piece.final_status %></td>
+    <td><%=h mail_piece.have_invoice %></td>
+    <td><%= link_to 'Show', mail_piece %></td>
+    <td><%= link_to 'Edit', edit_mail_piece_path(mail_piece) %></td>
+    <td><%= link_to 'Destroy', mail_piece, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
