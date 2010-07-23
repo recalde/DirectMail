@@ -4694,3 +4694,11 @@ Rendering template within layouts/mail_clients
 Rendering mail_clients/show
   [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
 Completed in 280ms (View: 89, DB: 12) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 18:08:18) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/minimal
+Rendering users/new
+Completed in 594ms (View: 538, DB: 1) | 200 OK [http://localhost/register]

@@ -2,12 +2,16 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :mail_clients
   map.resources :mail_pieces
+  map.resources :users
+
   map.resources :mail_clients, :has_many => :mail_pieces
 
   map.login "login", :controller => "user_sessions", :action => "new"
   map.logout "logout", :controller => "user_sessions", :action => "destroy"
 
-  map.connect 'users/edit', :controller => 'users', :action => 'edit'
+  map.register "register", :controller => "users", :action => "new"
+
+  #map.connect 'users/edit', :controller => 'users', :action => 'edit'
 
   map.resources :user_sessions
   map.resources :users
