@@ -4,6 +4,14 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :mail_pieces
   map.resources :mail_clients, :has_many => :mail_pieces
 
+  map.login "login", :controller => "user_sessions", :action => "new"
+  map.logout "logout", :controller => "user_sessions", :action => "destroy"
+
+  map.connect 'users/edit', :controller => 'users', :action => 'edit'
+
+  map.resources :user_sessions
+  map.resources :users
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
