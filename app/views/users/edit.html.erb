@@ -1,0 +1,39 @@
+<% form_for @user do |f| %>
+<table width="550px" border="0">
+    <tr>
+      <td width="30%" align="right">Username</td>
+      <td width="70%" align="left"><%= f.text_field :username, :size => "15" %></td>
+    </tr>
+    <tr>
+      <td width="30%" align="right"> First Name:</td>
+      <td width="70%" align="left"><%= f.text_field :first_name, :size => "20" %></td>
+    </tr>
+     <tr>
+      <td width="30%" align="right"> Last Name:</td>
+      <td width="70%" align="left"><%= f.text_field :last_name, :size => "20" %></td>
+    </tr>
+    <tr>
+      <td width="30%" align="right">Email:</td>
+      <td width="70%" align="left"><%= f.text_field :email %></td>
+    </tr>
+
+      <tr>
+      <td width="30%" align="right"> Password:</td>
+      <td width="70%" align="left"><%= f.password_field :password, :size => "20" %></td>
+    </tr>
+    <tr>
+      <td width="30%" align="right"> Confirm Password:</td>
+      <td width="70%" align="left"><%= f.password_field :password_confirmation, :size => "20" %></td>
+    </tr>
+     <tr>
+       <td colspan="2" align="right"><%= f.submit "Save" %></td>
+    </tr>
+     <tr>
+      <td colspan="2" class="notice"><%= flash[:notice] %></td>
+    </tr>
+    <tr>
+      <td colspan="2"><%= f.error_messages %></td>
+    </tr>
+
+  </table>
+<% end %>
