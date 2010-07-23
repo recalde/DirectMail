@@ -1,22 +1,35 @@
-<h1>Mail Clients</h1>
 
-<table>
+
+
+<h1>Client List</h1>
+
+<table id="mailClientTable">
+  <thead>
   <tr>
     <th>Last Name</th>
     <th>First Name</th>
     <th>District Number</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
   </tr>
+  </thead>
+
+  <tbody>
 
 <% @mail_clients.each do |mail_client| %>
   <tr>
     <td><%=h mail_client.first_name %></td>
     <td><%=h mail_client.last_name %></td>
     <td><%=h mail_client.district_number %></td>
-    <td><%= link_to 'Show', mail_client %></td>
+    <td><%= link_to 'View', mail_client %></td>
     <td><%= link_to 'Edit', edit_mail_client_path(mail_client) %></td>
-    <td><%= link_to 'Destroy', mail_client, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', mail_client, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
+
+  </tbody>
+
 </table>
 
 <br />

@@ -1,9 +1,16 @@
-<h1>New Mail Piece</h1>
+<h1>New Mail</h1>
 
 <% form_for([@mail_client, @mail_piece]) do |f| %>
   <%= f.error_messages %>
 
-  <table>
+  <table id="mailPieceTable">
+  <thead>
+  <tr>
+    <th>Field</th>
+    <th>Value</th>
+  </tr>
+  </thead>
+  <tbody>
     <tr><td><%= f.label :piece_name %><br /></td><td><%= f.text_field :piece_name %></td></tr>
     <tr><td><%= f.label :piece_code %><br /></td><td><%= f.text_field :piece_code %></td></tr>
     <tr><td><%= f.label :mail_universe_description %><br /></td><td><%= f.text_field :mail_universe_description %></td></tr>
@@ -18,10 +25,13 @@
     <tr><td><%= f.label :payment_description %><br /></td><td><%= f.text_field :payment_description %></td></tr>
     <tr><td><%= f.label :final_status %><br /></td><td><%= f.text_field :final_status %></td></tr>
     <tr><td><%= f.label :have_invoice %><br /></td><td><%= f.check_box :have_invoice %></td></tr>
-
-    <tr><td><br /></td><td><%= f.submit 'Create' %></td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td><br /></td><td><%= f.submit 'Save' %></td></tr>
+  </tfoot>
   </table>
 
 <% end %>
 
-<%= link_to 'Back', mail_pieces_path %>
+<%= link_to 'Client', mail_client_path(@mail_piece.mail_client) %> |
+<%= link_to 'Mail list', mail_client_mail_pieces_path(@mail_piece.mail_client) %>

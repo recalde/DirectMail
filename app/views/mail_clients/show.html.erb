@@ -1,26 +1,42 @@
-<h1>Mail Client</h1>
+<h1>Client</h1>
 
-<table>
+<table id="mailClientTable">
+  <thead>
+  <tr>
+    <th>Field</th>
+    <th>Value</th>
+  </tr>
+  </thead>
+  <tbody>
   <tr><td>First name</td><td><%=h @mail_client.first_name %></td></tr>
   <tr><td>Last name</td><td><%=h @mail_client.last_name %></td></tr>
   <tr><td>District number</td><td><%=h @mail_client.district_number %></td></tr>
+  </tbody>
 </table>
-<%= link_to 'Edit', edit_mail_client_path(@mail_client) %> | <%= link_to 'Back', mail_clients_path %>
+<%= link_to 'Edit', edit_mail_client_path(@mail_client) %> | <%= link_to 'Client list', mail_clients_path %>
 
-<h2>Mail Pieces</h2>
+<h2>Mail</h2>
 
-<table>
+<table id="mailPieceTable">
+  <thead>
   <tr>
     <th>Piece name</th>
     <th>Piece code</th>
+    <th>&nbsp;</th>
+    <th>&nbsp;</th>
   </tr>
+  </thead>
 
+  <tbody>
 <% @mail_client.mail_pieces.each do |p| %>
   <tr>
     <td><%=h p.piece_name %></td>
     <td><%=h p.piece_code %></td>
+    <td><%= link_to 'View', p %></td>
+    <td><%= link_to 'Edit', p %></td>
   </tr>
 <% end %>
-
+  </tbody>
 </table>
-<%= link_to 'Show all', mail_client_mail_pieces_path(@mail_client) %> | <%= link_to 'Add', new_mail_client_mail_piece_path(@mail_client) %>
+<%= link_to 'Add', new_mail_client_mail_piece_path(@mail_client) %> |
+<%= link_to 'Mail list', mail_client_mail_pieces_path(@mail_client) %>

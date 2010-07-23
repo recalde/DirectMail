@@ -1,6 +1,13 @@
-<h1>Mail Piece</h1>
+<h1>Mail</h1>
 
-<table>
+<table id="mailPieceTable">
+  <thead>
+  <tr>
+    <th>Field</th>
+    <th>Value</th>
+  </tr>
+  </thead>
+  <tbody>
   <tr><td>Piece name</td><td><%=h @mail_piece.piece_name %></td></tr>
   <tr><td>Piece code</td><td><%=h @mail_piece.piece_code %></td></tr>
   <tr><td>Mail universe description</td><td><%=h @mail_piece.mail_universe_description %></td></tr>
@@ -15,7 +22,9 @@
   <tr><td>Payment description</td><td><%=h @mail_piece.payment_description %></td></tr>
   <tr><td>Final status</td><td><%=h @mail_piece.final_status %></td></tr>
   <tr><td>Have invoice</td><td><%=h @mail_piece.have_invoice %></td></tr>
+  </tbody>
 </table>
 
 <%= link_to 'Edit', edit_mail_piece_path(@mail_piece) %> |
-<%= link_to 'Back to client', mail_client_mail_pieces_path(@mail_piece.mail_client) %>
+<%= link_to 'Client', mail_client_path(@mail_piece.mail_client) %> |
+<%= link_to 'Mail list', mail_client_mail_pieces_path(@mail_piece.mail_client) %>

@@ -1,15 +1,23 @@
-<h1>New Mail Client</h1>
+<h1>New Client</h1>
 
 <% form_for(@mail_client) do |f| %>
   <%= f.error_messages %>
 
-<table>
+<table id="mailClientTable">
+  <thead>
+  <tr>
+    <th>Field</th>
+    <th>Value</th>
+  </tr>
+  </thead>
+  <tbody>
   <tr><td><%= f.label :first_name %></td><td><%= f.text_field :first_name %></td></tr>
   <tr><td><%= f.label :last_name %></td><td><%= f.text_field :last_name %></td></tr>
   <tr><td><%= f.label :district_number %></td><td><%= f.text_field :district_number %></td></tr>
-  <tr><td></td><td><%= f.submit 'Update' %></td></tr>
+  <tr><td></td><td><%= f.submit 'Save' %></td></tr>
+  </tbody>
 </table>
 
 <% end %>
 
-<%= link_to 'Back', mail_clients_path %>
+<%= link_to 'Client list', mail_clients_path %>

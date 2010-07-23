@@ -609,3 +609,2731 @@ ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" wit
   /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (99.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:17) [GET]
+  [4;35;1mMailClient Load (159.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 1703ms (View: 1111, DB: 258) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 326ms (View: 279, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:27) [GET]
+  [4;36;1mMailClient Load (5.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 146ms (View: 126, DB: 6) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (16.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 724ms (View: 640, DB: 16) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:34) [GET]
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 205ms (View: 38, DB: 1) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 08:54:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:54:58) [GET]
+  [4;35;1mMailClient Load (31.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 512ms (View: 376, DB: 32) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (9.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:01) [GET]
+  [4;36;1mMailClient Load (26.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 222ms (View: 112, DB: 35) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 198ms (View: 156, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:07) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 218ms (View: 150, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 10:55:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:08:44) [GET]
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 128ms (View: 81, DB: 3) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:08:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:08:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 128ms (View: 88, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:08:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:08:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 117ms (View: 77, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:08:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:09:05) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (7.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 257ms (View: 166, DB: 8) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (25.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:09:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:09:28) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 173ms (View: 108, DB: 1) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:09:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:26:25) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 97ms (View: 67, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (4.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:26:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:26:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 111ms (View: 75, DB: 7) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:26:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (20.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:26:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 123ms (View: 79, DB: 21) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:26:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:45:32) [GET]
+  [4;36;1mMailClient Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 123ms (View: 91, DB: 6) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (7.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:45:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:47:38) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 87ms (View: 54, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:47:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:47:41) [GET]
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 84ms (View: 49, DB: 3) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (5.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:47:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:48:14) [GET]
+  [4;35;1mMailClient Load (3.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 93ms (View: 66, DB: 12) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (24.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:48:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:48:26) [GET]
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 82ms (View: 55, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:48:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:49:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 136ms (View: 90, DB: 1) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (27.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:49:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:49:06) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 185ms (View: 130, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (14.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:49:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:49:10) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 136ms (View: 82, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:52:25) [GET]
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 85ms (View: 54, DB: 7) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:52:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:57:45) [GET]
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 89ms (View: 51, DB: 1) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (29.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 11:57:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:00:17) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 110ms (View: 74, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:00:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:00:20) [GET]
+  [4;36;1mMailClient Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 93ms (View: 61, DB: 5) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:00:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:06:52) [GET]
+  [4;35;1mMailClient Load (3.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 99ms (View: 67, DB: 4) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:06:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:06:58) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 179ms (View: 116, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:06:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:08:22) [GET]
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 96ms (View: 65, DB: 0) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:08:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (5.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:08:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 89ms (View: 55, DB: 5) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:08:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:11:40) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 106ms (View: 77, DB: 1) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:11:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (4.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:12:10) [GET]
+  [4;36;1mMailClient Load (7.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 125ms (View: 72, DB: 11) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:12:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:17:50) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 98ms (View: 65, DB: 3) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:17:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:18:50) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 100ms (View: 70, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:21:12) [GET]
+
+ActionController::RoutingError (No route matches "/themes/blue" with {:method=>:get}):
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:25:50) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 107ms (View: 72, DB: 2) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:26:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 122ms (View: 78, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:26:09) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 263ms (View: 176, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:26:13) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (4.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 169ms (View: 95, DB: 14) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:26:55) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (0.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 677ms (View: 107, DB: 1) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:28:44) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 172ms (View: 110, DB: 5) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:29:13) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (0.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 143ms (View: 87, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:29:30) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 158ms (View: 102, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (4.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:30:07) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 167ms (View: 105, DB: 5) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:30:09) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 863ms (View: 796, DB: 16) | 200 OK [http://localhost/mail_clients/1/mail_pieces/new]
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:18) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 111ms (View: 78, DB: 4) | 200 OK [http://localhost/mail_clients/]
+  [4;35;1mSQL (9.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:21) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 96ms (View: 61, DB: 9) | 200 OK [http://localhost/mail_clients/new]
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:28) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 80ms (View: 49, DB: 7) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (5.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 199ms (View: 112, DB: 8) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 109ms (View: 70, DB: 4) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 140ms (View: 92, DB: 5) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:31:59) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 87ms (View: 52, DB: 1) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:32:02) [GET]
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 86ms (View: 55, DB: 3) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:32:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 109ms (View: 75, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:32:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 103ms (View: 61, DB: 2) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:32:28) [GET]
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 83ms (View: 53, DB: 3) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:32:30) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 93ms (View: 53, DB: 10) | 200 OK [http://localhost/mail_clients/new]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:33:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 124ms (View: 88, DB: 5) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (8.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:33:23) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 378ms (View: 306, DB: 9) | 200 OK [http://localhost/mail_clients/1/mail_pieces/new]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#create (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:34:03) [POST]
+  Parameters: {"authenticity_token"=>"J/ZO7rD+6vp8x4iq+0dKGOlOv8p2/BHQFm/ehrCHKs8=", "mail_piece"=>{"piece_name"=>"Piece 2", "piece_code"=>"P2", "mail_universe_description"=>"Universe2", "household_quantity_estimate"=>"20", "voter_count"=>"200", "list_name"=>"List2", "date_to_printer(1i)"=>"2010", "date_to_printer(2i)"=>"7", "date_to_printer(3i)"=>"30", "usps_drop_date(1i)"=>"2010", "usps_drop_date(2i)"=>"7", "usps_drop_date(3i)"=>"6", "expected_drop_date(1i)"=>"2010", "expected_drop_date(2i)"=>"7", "expected_drop_date(3i)"=>"30", "target_hit_date(1i)"=>"2010", "target_hit_date(2i)"=>"7", "target_hit_date(3i)"=>"7", "actual_hit_date(1i)"=>"2010", "actual_hit_date(2i)"=>"7", "actual_hit_date(3i)"=>"23", "payment_description"=>"Payment", "final_status"=>"Final", "have_invoice"=>"0"}, "commit"=>"Save", "mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mSQL (130.0ms)[0m   [0;1mINSERT INTO `mail_pieces` (`created_at`, `updated_at`, `mail_client_id`, `piece_name`, `piece_code`, `mail_universe_description`, `household_quantity_estimate`, `voter_count`, `list_name`, `date_to_printer`, `target_hit_date`, `actual_hit_date`, `payment_description`, `final_status`, `have_invoice`, `expected_drop_date`, `usps_drop_date`) VALUES('2010-07-23 16:34:03', '2010-07-23 16:34:03', 1, 'Piece 2', 'P2', 'Universe2', 20, 200, 'List2', '2010-07-30', '2010-07-07', '2010-07-23', 'Payment', 'Final', 0, '2010-07-30', '2010-07-06')[0m
+Redirected to http://localhost:3000/mail_pieces/2
+Completed in 283ms (DB: 132) | 302 Found [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:34:04) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 2) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 125ms (View: 84, DB: 3) | 200 OK [http://localhost/mail_pieces/2]
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:34:07) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 173ms (View: 115, DB: 14) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:08) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 264ms (View: 197, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:16) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find MailClient without an ID):
+  app/controllers/mail_pieces_controller.rb:6:in `index'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (340.0ms)
+Rendered rescues/_request_and_response (23.0ms)
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:21) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find MailClient without an ID):
+  app/controllers/mail_pieces_controller.rb:6:in `index'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (444.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:25) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 89ms (View: 60, DB: 1) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:29) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 89ms (View: 54, DB: 0) | 200 OK [http://localhost/mail_clients/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:45) [GET]
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 98ms (View: 72, DB: 0) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 125ms (View: 81, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (19.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:41:55) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 215ms (View: 137, DB: 24) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:42:02) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 363ms (View: 285, DB: 0) | 200 OK [http://localhost/mail_clients/1/mail_pieces/new]
+  [4;36;1mSQL (18.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#create (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:42:28) [POST]
+  Parameters: {"authenticity_token"=>"J/ZO7rD+6vp8x4iq+0dKGOlOv8p2/BHQFm/ehrCHKs8=", "mail_piece"=>{"piece_name"=>"Piece 3", "piece_code"=>"P3", "mail_universe_description"=>"Universe3", "household_quantity_estimate"=>"30", "voter_count"=>"300", "list_name"=>"List3", "date_to_printer(1i)"=>"2010", "date_to_printer(2i)"=>"7", "date_to_printer(3i)"=>"23", "usps_drop_date(1i)"=>"2010", "usps_drop_date(2i)"=>"7", "usps_drop_date(3i)"=>"23", "expected_drop_date(1i)"=>"2010", "expected_drop_date(2i)"=>"7", "expected_drop_date(3i)"=>"23", "target_hit_date(1i)"=>"2010", "target_hit_date(2i)"=>"7", "target_hit_date(3i)"=>"23", "actual_hit_date(1i)"=>"2010", "actual_hit_date(2i)"=>"7", "actual_hit_date(3i)"=>"23", "payment_description"=>"Check # 200", "final_status"=>"Final", "have_invoice"=>"0"}, "commit"=>"Save", "mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO `mail_pieces` (`created_at`, `updated_at`, `mail_client_id`, `piece_name`, `piece_code`, `mail_universe_description`, `household_quantity_estimate`, `voter_count`, `list_name`, `date_to_printer`, `target_hit_date`, `actual_hit_date`, `payment_description`, `final_status`, `have_invoice`, `expected_drop_date`, `usps_drop_date`) VALUES('2010-07-23 16:42:29', '2010-07-23 16:42:29', 1, 'Piece 3', 'P3', 'Universe3', 30, 300, 'List3', '2010-07-23', '2010-07-23', '2010-07-23', 'Check # 200', 'Final', 0, '2010-07-23', '2010-07-23')[0m
+Redirected to http://localhost:3000/mail_pieces/3
+Completed in 171ms (DB: 20) | 302 Found [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:42:29) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 3) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 124ms (View: 83, DB: 3) | 200 OK [http://localhost/mail_pieces/3]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 12:42:31) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 238ms (View: 167, DB: 3) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:36:59) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 238ms (View: 179, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (13.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:37:11) [GET]
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 104ms (View: 65, DB: 13) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:37:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (4.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 144ms (View: 94, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:38:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 111ms (View: 75, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:39:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (6.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 117ms (View: 74, DB: 8) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:39:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 113ms (View: 79, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:41:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (4.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 123ms (View: 77, DB: 5) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (10.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:41:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (3.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 128ms (View: 81, DB: 14) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:41:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 150ms (View: 112, DB: 10) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:41:56) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 216ms (View: 155, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:42:16) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 214ms (View: 156, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:42:18) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 217ms (View: 160, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (22.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:42:36) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 219ms (View: 160, DB: 25) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:42:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 176ms (View: 135, DB: 3) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:45:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 142ms (View: 106, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (14.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:45:28) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 229ms (View: 166, DB: 16) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:45:31) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 215ms (View: 154, DB: 7) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:51:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 137ms (View: 94, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:51:48) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 293ms (View: 229, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (8.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:51:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (7.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 160ms (View: 112, DB: 17) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 378ms (View: 328, DB: 3) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#update (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:22) [PUT]
+  Parameters: {"authenticity_token"=>"J/ZO7rD+6vp8x4iq+0dKGOlOv8p2/BHQFm/ehrCHKs8=", "mail_piece"=>{"actual_hit_date(1i)"=>"2010", "actual_hit_date(2i)"=>"7", "actual_hit_date(3i)"=>"23", "date_to_printer(1i)"=>"2010", "date_to_printer(2i)"=>"7", "date_to_printer(3i)"=>"23", "expected_drop_date(1i)"=>"2010", "expected_drop_date(2i)"=>"7", "expected_drop_date(3i)"=>"23", "final_status"=>"Complete", "have_invoice"=>"1", "household_quantity_estimate"=>"10", "list_name"=>"List1", "mail_universe_description"=>"Universe", "payment_description"=>"Check # 123", "piece_code"=>"P1", "piece_name"=>"Piece 1", "target_hit_date(1i)"=>"2010", "target_hit_date(2i)"=>"7", "target_hit_date(3i)"=>"23", "usps_drop_date(1i)"=>"2010", "usps_drop_date(2i)"=>"7", "usps_drop_date(3i)"=>"23", "voter_count"=>"101"}, "commit"=>"Save", "id"=>"1"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+  [4;35;1mMailPiece Update (94.0ms)[0m   [0mUPDATE `mail_pieces` SET `voter_count` = 101, `updated_at` = '2010-07-23 17:52:22' WHERE `id` = 1[0m
+Redirected to http://localhost:3000/mail_pieces/1
+Completed in 199ms (DB: 95) | 302 Found [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 138ms (View: 79, DB: 2) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:27) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 225ms (View: 161, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 2) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 307ms (View: 270, DB: 2) | 200 OK [http://localhost/mail_pieces/2/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:33) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 206ms (View: 148, DB: 3) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 342ms (View: 299, DB: 4) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:52:57) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 226ms (View: 161, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:53:02) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 3) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 1346ms (View: 1311, DB: 6) | 200 OK [http://localhost/mail_pieces/3/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:53:10) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (4.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (9.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 224ms (View: 155, DB: 13) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:53:25) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (4.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 252ms (View: 185, DB: 6) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:54:22) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (8.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 231ms (View: 157, DB: 8) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:54:55) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.mail_client) on line #56 of app/views/mail_pieces/index.html.erb:
+53: </table>
+54: 
+55: <%= link_to 'Add', new_mail_client_mail_piece_path(@mail_client) %> |
+56: <%= link_to 'Back to client', mail_client_mail_pieces_path(@mail_piece.mail_client) %>
+
+    app/views/mail_pieces/index.html.erb:56
+    app/controllers/mail_pieces_controller.rb:9:in `index'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (380.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:55:21) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 229ms (View: 174, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:55:24) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (4.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 239ms (View: 170, DB: 6) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:55:28) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 207ms (View: 148, DB: 3) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:55:40) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 315ms (View: 213, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:55:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 116ms (View: 81, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:56:54) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 91ms (View: 63, DB: 1) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (13.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:56:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 130ms (View: 98, DB: 14) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 119ms (View: 84, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:48) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 76ms (View: 50, DB: 2) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 98ms (View: 65, DB: 1) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:53) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 79ms (View: 50, DB: 2) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 98ms (View: 64, DB: 0) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (4.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 113ms (View: 69, DB: 7) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (6.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:57:58) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 87ms (View: 56, DB: 7) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 114ms (View: 75, DB: 1) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/edit
+Completed in 79ms (View: 46, DB: 1) | 200 OK [http://localhost/mail_clients/1/edit]
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:05) [GET]
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 78ms (View: 51, DB: 8) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (3.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:10) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 88ms (View: 51, DB: 3) | 200 OK [http://localhost/mail_clients/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:11) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 84ms (View: 48, DB: 1) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:13) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 102ms (View: 49, DB: 1) | 200 OK [http://localhost/mail_clients/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:15) [GET]
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 88ms (View: 60, DB: 0) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (9.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:17) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 78ms (View: 49, DB: 9) | 200 OK [http://localhost/mail_clients/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:47) [GET]
+Rendering template within layouts/mail_clients
+Rendering mail_clients/new
+Completed in 86ms (View: 55, DB: 0) | 200 OK [http://localhost/mail_clients/new]
+  [4;36;1mSQL (11.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:52) [GET]
+  [4;35;1mMailClient Load (3.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 82ms (View: 49, DB: 14) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:58:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 105ms (View: 65, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 13:59:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `mail_piece' for #<ActionView::Base:0x87be88>) on line #34 of app/views/mail_clients/show.html.erb:
+31:   <tr>
+32:     <td><%=h p.piece_name %></td>
+33:     <td><%=h p.piece_code %></td>
+34:     <td><%= link_to 'View', mail_piece %></td>
+35:   </tr>
+36: <% end %>
+37:   </tbody>
+
+    app/views/mail_clients/show.html.erb:34
+    app/views/mail_clients/show.html.erb:30
+    app/controllers/mail_clients_controller.rb:18:in `show'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (411.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 140ms (View: 99, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 104ms (View: 64, DB: 2) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (7.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 325ms (View: 290, DB: 8) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;35;1mSQL (3.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (94.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 275ms (View: 128, DB: 98) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 108ms (View: 72, DB: 2) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:44) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (4.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 210ms (View: 147, DB: 7) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 120ms (View: 81, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:00:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 97ms (View: 62, DB: 4) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:02:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (0.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+
+ActionView::TemplateError (undefined method `mail_client' for #<ActionView::Base:0x48fc6b>) on line #30 of app/views/mail_pieces/show.html.erb:
+27: 
+28: <%= link_to 'Edit', edit_mail_piece_path(@mail_piece) %> |
+29: <%= link_to 'Mail pieces', mail_client_mail_pieces_path(@mail_piece.mail_client) %>
+30: <%= link_to 'Client', mail_client(@mail_piece.mail_client) %>
+
+    app/views/mail_pieces/show.html.erb:30
+    app/controllers/mail_pieces_controller.rb:20:in `show'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (370.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (11.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:02:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (3.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 125ms (View: 77, DB: 15) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:02:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 139ms (View: 106, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:02:46) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (3.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 217ms (View: 154, DB: 5) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:03:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 122ms (View: 84, DB: 3) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (17.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:03:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+
+ActionView::TemplateError (undefined local variable or method `mail_piece' for #<ActionView::Base:0x19559db>) on line #38 of app/views/mail_pieces/edit.html.erb:
+35: 
+36: <% end %>
+37: 
+38: <%= link_to 'View', mail_piece %> |
+39: <%= link_to 'Client', mail_client_path(@mail_piece.mail_client) %> |
+40: <%= link_to 'All Mail', mail_client_mail_pieces_path(@mail_piece.mail_client) %>
+
+    app/views/mail_pieces/edit.html.erb:38
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+    /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (354.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 329ms (View: 289, DB: 2) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 129ms (View: 84, DB: 2) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 127ms (View: 93, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:27) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 206ms (View: 149, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 313ms (View: 273, DB: 1) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (4.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 182ms (View: 115, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:41) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 130ms (View: 85, DB: 2) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 119ms (View: 85, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 111ms (View: 72, DB: 6) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:05:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (11.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 365ms (View: 318, DB: 12) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:06:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (0.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 169ms (View: 109, DB: 7) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:06:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 133ms (View: 91, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (12.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:06:14) [GET]
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 96ms (View: 60, DB: 12) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:06:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (3.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (5.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 135ms (View: 88, DB: 9) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:06:22) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 202ms (View: 150, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:07:01) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 271ms (View: 194, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (15.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:07:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 143ms (View: 103, DB: 18) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:08:22) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 86ms (View: 51, DB: 3) | 200 OK [http://localhost/mail_clients/]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:08:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 151ms (View: 106, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:08:33) [GET]
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 89ms (View: 64, DB: 1) | 200 OK [http://localhost/mail_clients]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:08:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 122ms (View: 88, DB: 3) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:08:58) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (5.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 537ms (View: 148, DB: 6) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:09:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 201ms (View: 153, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:09:02) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 212ms (View: 155, DB: 3) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:09:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 148ms (View: 108, DB: 2) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:09:06) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 243ms (View: 167, DB: 4) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:09:08) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 330ms (View: 261, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces/new]
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:09:12) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 452ms (View: 387, DB: 5) | 200 OK [http://localhost/mail_clients/1/mail_pieces/new]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:10:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (2.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 146ms (View: 111, DB: 4) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:10:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;36;1mMailPiece Load (3.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 144ms (View: 101, DB: 5) | 200 OK [http://localhost/mail_clients/1]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:11:00) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 282ms (View: 229, DB: 3) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:11:28) [GET]
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/index
+Completed in 108ms (View: 79, DB: 1) | 200 OK [http://localhost/mail_clients]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:11:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mMailPiece Load (3.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 136ms (View: 88, DB: 5) | 200 OK [http://localhost/mail_pieces/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:11:35) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (0.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 252ms (View: 175, DB: 1) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:05) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (1.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 325ms (View: 264, DB: 3) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailClientsController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailClient Load (4.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_clients
+Rendering mail_clients/show
+  [4;35;1mMailPiece Load (1.0ms)[0m   [0mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Completed in 155ms (View: 113, DB: 5) | 200 OK [http://localhost/mail_clients/1]
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:13) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (2.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (5.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 233ms (View: 164, DB: 15) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#new (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:17) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;36;1mMailClient Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 373ms (View: 299, DB: 1) | 200 OK [http://localhost/mail_clients/1/mail_pieces/new]
+  [4;36;1mSQL (6.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:19) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (6.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (2.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 240ms (View: 175, DB: 14) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 142ms (View: 95, DB: 3) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:24) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 239ms (View: 180, DB: 2) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#edit (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/edit
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 355ms (View: 311, DB: 1) | 200 OK [http://localhost/mail_pieces/1/edit]
+  [4;36;1mSQL (10.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:28) [GET]
+  Parameters: {"mail_client_id"=>"1"}
+  [4;35;1mMailClient Load (0.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+  [4;36;1mMailPiece Load (1.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.mail_client_id = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/index
+Completed in 235ms (View: 168, DB: 11) | 200 OK [http://localhost/mail_clients/1/mail_pieces]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#show (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mMailPiece Load (6.0ms)[0m   [0;1mSELECT * FROM `mail_pieces` WHERE (`mail_pieces`.`id` = 1) [0m
+Rendering template within layouts/mail_pieces
+Rendering mail_pieces/show
+  [4;35;1mMailClient Load (11.0ms)[0m   [0mSELECT * FROM `mail_clients` WHERE (`mail_clients`.`id` = 1) [0m
+Completed in 147ms (View: 88, DB: 18) | 200 OK [http://localhost/mail_pieces/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MailPiecesController#index (for 0:0:0:0:0:0:0:1 at 2010-07-23 14:12:41) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find MailClient without an ID):
+  app/controllers/mail_pieces_controller.rb:6:in `index'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:19:in `load'
+  /usr/local/netbeans-6.8/ruby2/jruby-1.4.0/bin/rdebug-ide:19
+
+Rendered rescues/_trace (288.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (not_found)
