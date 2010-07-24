@@ -1,22 +1,7 @@
-<h1>Client</h1>
-
-<table id="mailClientTable">
-  <thead>
-  <tr>
-    <th>Field</th>
-    <th>Value</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr><td>First name</td><td><%=h @mail_client.first_name %></td></tr>
-  <tr><td>Last name</td><td><%=h @mail_client.last_name %></td></tr>
-  <tr><td>District number</td><td><%=h @mail_client.district_number %></td></tr>
-  </tbody>
-</table>
+<h1><%=h @mail_client.last_name %>, <%=h @mail_client.first_name %> (#<%=h @mail_client.district_number %>)</h1>
 <%= link_to 'Edit', edit_mail_client_path(@mail_client) %> |
-<%= link_to 'Client list', mail_clients_path %>
-
-<h2>Mail Summary</h2>
+<%= link_to 'Client list', mail_clients_path %> |
+<%= link_to 'Mail list', mail_pieces_path %>
 
 <table id="mailPieceTable">
   <thead>
