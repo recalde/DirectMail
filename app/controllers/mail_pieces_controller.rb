@@ -4,7 +4,7 @@ class MailPiecesController < ApplicationController
   def index
     if is_logged_in?
 
-      @mail_pieces = MailPiece.all
+      @mail_pieces = MailPiece.all :joins => :mail_client, :order => "last_name ASC, usps_drop_date ASC"
 
       respond_to do |format|
         format.html # index.html.erb

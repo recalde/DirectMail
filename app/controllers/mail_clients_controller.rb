@@ -5,7 +5,7 @@ class MailClientsController < ApplicationController
 
     if is_logged_in?
 
-      @mail_clients = MailClient.all
+      @mail_clients = MailClient.all(:order => "last_name ASC, first_name ASC")
       respond_to do |format|
         format.html # index.html.erb
         format.xml  { render :xml => @mail_clients }

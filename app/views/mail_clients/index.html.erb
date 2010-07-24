@@ -6,9 +6,9 @@
 <table id="mailClientTable">
   <thead>
   <tr>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>Client Name</th>
     <th>District Number</th>
+    <th>Mail Pieces</th>
     <th>&nbsp;</th>
   </tr>
   </thead>
@@ -17,9 +17,9 @@
 
 <% @mail_clients.each do |mail_client| %>
   <tr>
-    <td><%=h mail_client.first_name %></td>
-    <td><%=h mail_client.last_name %></td>
+    <td><%=h mail_client.last_name %>, <%=h mail_client.first_name %></td>
     <td><%=h mail_client.district_number %></td>
+    <td><%=h mail_client.mail_pieces.count %></td>
     <td><%= link_to 'View', mail_client %></td>
   </tr>
 <% end %>
