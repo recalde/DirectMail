@@ -4,6 +4,7 @@
 <table id="mailPieceTable">
   <thead>
   <tr>
+    <th>Gang</th>
     <th>Name</th>
     <th>Code</th>
     <th>Status</th>
@@ -30,6 +31,7 @@
 
 <% @mail_pieces.each do |mail_piece| %>
   <tr>
+    <td><%=h mail_piece.gang_name %></td>
     <td><%=h mail_piece.piece_name %></td>
     <td><%=h mail_piece.piece_code %></td>
     <td><%=h mail_piece.current_status %></td>

@@ -22,6 +22,7 @@
 <table id="mailPieceTable">
   <thead>
   <tr>
+    <th>Gang</th>
     <th>Piece name</th>
     <th>Piece code</th>
     <th>Status</th>
@@ -35,6 +36,7 @@
   <tbody>
 <% @mail_client.mail_pieces.each do |p| %>
   <tr>
+    <td><%=h p.gang_name %></td>
     <td><%=h p.piece_name %></td>
     <td><%=h p.piece_code %></td>
     <td><%=h p.current_status %></td>
