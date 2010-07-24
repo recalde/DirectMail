@@ -1,62 +1,37 @@
 
-<h1>Mail - <%=h @mail_client.first_name %> <%=h @mail_client.last_name %></h1>
+<h1>Mail</h1>
 
 <table id="mailPieceTable">
   <thead>
   <tr>
+    <th>Client</th>
     <th>Gang</th>
-    <th>Name</th>
-    <th>Code</th>
+    <th>Piece</th>
+    <th>Printer</th>
+    <th>Drop</th>
     <th>Status</th>
+    <th>Universe</th>
+    <th>Qty</th>
     <th>Order Qty</th>
-    <th>Mail universe description</th>
-    <th>Household quantity estimate</th>
-    <th>Voter count</th>
-    <th>List name</th>
-    <th>Date to printer</th>
-    <th>Usps drop date</th>
-    <th>Expected drop date</th>
-    <th>Target hit date</th>
-    <th>Actual hit date</th>
-    <th>Payment description</th>
-    <th>Final status</th>
-    <th>Have invoice</th>
-    <th>&nbsp;</th>
-    <th>&nbsp;</th>
     <th>&nbsp;</th>
   </tr>
   </thead>
-
   <tbody>
-
 <% @mail_pieces.each do |mail_piece| %>
   <tr>
+    <td><%=h mail_piece.mail_client.last_name %>, <%=h mail_piece.mail_client.first_name %></td>
     <td><%=h mail_piece.gang_name %></td>
     <td><%=h mail_piece.piece_name %></td>
-    <td><%=h mail_piece.piece_code %></td>
-    <td><%=h mail_piece.current_status %></td>
-    <td><%=h mail_piece.order_qty %></td>
-    <td><%=h mail_piece.mail_universe_description %></td>
-    <td><%=h mail_piece.household_quantity_estimate %></td>
-    <td><%=h mail_piece.voter_count %></td>
-    <td><%=h mail_piece.list_name %></td>
     <td><%=h mail_piece.date_to_printer %></td>
     <td><%=h mail_piece.usps_drop_date %></td>
-    <td><%=h mail_piece.expected_drop_date %></td>
-    <td><%=h mail_piece.target_hit_date %></td>
-    <td><%=h mail_piece.actual_hit_date %></td>
-    <td><%=h mail_piece.payment_description %></td>
-    <td><%=h mail_piece.final_status %></td>
-    <td><%=h mail_piece.have_invoice %></td>
-    <td><%= link_to 'View', mail_piece %></td>
+    <td><%=h mail_piece.current_status %></td>
+    <td><%=h mail_piece.mail_universe_description %></td>
+    <td><%=h mail_piece.household_quantity_estimate %></td>
+    <td><%=h mail_piece.order_qty %></td>
     <td><%= link_to 'Edit', edit_mail_piece_path(mail_piece) %></td>
-    <td><%= link_to 'Delete', mail_piece, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 
   </tbody>
 
 </table>
-
-<%= link_to 'Add', new_mail_client_mail_piece_path(@mail_client) %> |
-<%= link_to 'Client', mail_client_path(@mail_client) %>

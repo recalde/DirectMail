@@ -4,8 +4,7 @@ class MailPiecesController < ApplicationController
   def index
     if is_logged_in?
 
-      @mail_client = MailClient.find(params[:mail_client_id])
-      @mail_pieces = @mail_client.mail_pieces.all
+      @mail_pieces = MailPiece.all
 
       respond_to do |format|
         format.html # index.html.erb
@@ -67,7 +66,7 @@ class MailPiecesController < ApplicationController
       respond_to do |format|
         if @mail_piece.save
           flash[:notice] = 'MailPiece was successfully created.'
-          format.html { redirect_to(@mail_piece) }
+          format.html { redirect_to mail_client_path(@mail_client) }
           format.xml  { render :xml => @mail_piece, :status => :created, :location => @mail_piece }
         else
           format.html { render :action => "new" }
@@ -88,7 +87,7 @@ class MailPiecesController < ApplicationController
       respond_to do |format|
         if @mail_piece.update_attributes(params[:mail_piece])
           flash[:notice] = 'MailPiece was successfully updated.'
-          format.html { redirect_to(@mail_piece) }
+          format.html { redirect_to mail_client_path(@mail_piece.mail_client) }
           format.xml  { head :ok }
         else
           format.html { render :action => "edit" }
@@ -111,7 +110,7 @@ class MailPiecesController < ApplicationController
 
       respond_to do |format|
 
-        format.html { redirect_to mail_client_mail_pieces_path(@mail_client) }
+        format.html { redirect_to mail_client_path(@mail_client) }
         format.xml  { head :ok }
     end
     else
