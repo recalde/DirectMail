@@ -19,7 +19,7 @@
   <tbody>
 <% @mail_pieces.each do |mail_piece| %>
   <tr>
-    <td><%=h mail_piece.mail_client.last_name %>, <%=h mail_piece.mail_client.first_name %></td>
+    <td><%= link_to mail_piece.mail_client.last_name, mail_client_path(mail_piece.mail_client) %></td>
     <td><%=h mail_piece.gang_name %></td>
     <td><%=h mail_piece.piece_name %></td>
     <td><%=h mail_piece.date_to_printer %></td>
