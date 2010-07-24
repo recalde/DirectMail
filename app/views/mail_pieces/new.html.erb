@@ -20,11 +20,11 @@
     <tr><td><%= f.label :household_quantity_estimate %><br /></td><td><%= f.text_field :household_quantity_estimate %></td></tr>
     <tr><td><%= f.label :voter_count %><br /></td><td><%= f.text_field :voter_count %></td></tr>
     <tr><td><%= f.label :list_name %><br /></td><td><%= f.text_field :list_name %></td></tr>
-    <tr><td><%= f.label :date_to_printer %><br /></td><td><%= f.date_select :date_to_printer %></td></tr>
-    <tr><td><%= f.label :usps_drop_date %><br /></td><td><%= f.date_select :usps_drop_date %></td></tr>
-    <tr><td><%= f.label :expected_drop_date %><br /></td><td><%= f.date_select :expected_drop_date %></td></tr>
-    <tr><td><%= f.label :target_hit_date %><br /></td><td><%= f.date_select :target_hit_date %></td></tr>
-    <tr><td><%= f.label :actual_hit_date %><br /></td><td><%= f.date_select :actual_hit_date %></td></tr
+    <tr><td><%= f.label :date_to_printer %><br /></td><td><%= f.date_select :date_to_printer, :include_blank => true %></td></tr>
+    <tr><td><%= f.label :usps_drop_date %><br /></td><td><%= f.date_select :usps_drop_date, :include_blank => true %></td></tr>
+    <tr><td><%= f.label :expected_drop_date %><br /></td><td><%= f.date_select :expected_drop_date, :include_blank => true %></td></tr>
+    <tr><td><%= f.label :target_hit_date %><br /></td><td><%= f.date_select :target_hit_date, :include_blank => true %></td></tr>
+    <tr><td><%= f.label :actual_hit_date %><br /></td><td><%= f.date_select :actual_hit_date, :include_blank => true %></td></tr
     <tr><td><%= f.label :payment_description %><br /></td><td><%= f.text_field :payment_description %></td></tr>
     <tr><td><%= f.label :final_status %><br /></td><td><%= f.text_field :final_status %></td></tr>
     <tr><td><%= f.label :have_invoice %><br /></td><td><%= f.check_box :have_invoice %></td></tr>
