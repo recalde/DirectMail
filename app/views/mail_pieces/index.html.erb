@@ -6,6 +6,8 @@
   <tr>
     <th>Name</th>
     <th>Code</th>
+    <th>Status</th>
+    <th>Order Qty</th>
     <th>Mail universe description</th>
     <th>Household quantity estimate</th>
     <th>Voter count</th>
@@ -30,6 +32,8 @@
   <tr>
     <td><%=h mail_piece.piece_name %></td>
     <td><%=h mail_piece.piece_code %></td>
+    <td><%=h mail_piece.current_status %></td>
+    <td><%=h mail_piece.order_qty %></td>
     <td><%=h mail_piece.mail_universe_description %></td>
     <td><%=h mail_piece.household_quantity_estimate %></td>
     <td><%=h mail_piece.voter_count %></td>
